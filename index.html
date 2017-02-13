@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+</body>
+<script>
+function order(array) {
+  //Variable para mi límite en el "for"	
+  var arrayLast = array.length - 1;
+  //Variable temporal para intercambio de dato en el Array
+  var temp;
+  //Método some para verificar si se puede hacer el cambio de datos o no
+  array.some(function() {
+    //For para recorrido de datos en el array
+    for (var index = 0; index < arrayLast; index++) {
+      //Variable nextIndex para comparación entre el dato presente y el siguiente
+      var nextIndex = index + 1;
+      //If para la comparativa de datos
+      if (array[index] > array[nextIndex]) {
+      	//Swap o cambio de datos ayudándonos de nuestra variable previa temp
+        temp = array[nextIndex];
+        array[nextIndex] = array[index];
+        array[index] = temp;
+        //Cambiamos el boolean noSwap
+      }
+    }
+  });
+}
+
+var numbers = [12, 10, 1, 15, 11, 44, 88, 14, 13, 16, 11, 13];
+order(numbers);
+console.log(numbers);
+</script>
+</html>
