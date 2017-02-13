@@ -1,0 +1,55 @@
+body {
+	background: url('http://codecondo.com/wp-content/uploads/2014/04/12-Courses-for-Starting-Your-Web-Development-Journey.jpg?478983');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: Verdana;
+}
+
+.container {
+	display: block;
+	width: 60%;
+	margin: 20px auto;
+	text-align: center;
+	background: rgba(255,255,255,0.8);
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+#in {
+	margin: 20px auto;
+}
+
+.in-title {
+	color: #333;
+	text-transform: uppercase;
+}
+
+.in-inputQuantity,
+.in-btn {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+}
+
+.in-btn {
+	background-color: #115F90;
+	color: white;
+	cursor: pointer;
+}
+
+.proccess-input {
+	padding: 5px 10px;
+}
+
+.out-btn {
+	display: none;
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 20px;
+	background-color: #042940;
+	color: white;
+	cursor: pointer;
+	margin: 20px auto;
+}
